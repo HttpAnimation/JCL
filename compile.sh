@@ -14,7 +14,7 @@ mkdir -p "$build_folder"
 gcc Server-EXP.c -o "$build_folder/webserver" -lmicrohttpd
 
 # Copy files into the build folder
-cp server.c "$build_folder/server.c"
+cp Server-EXP.c "$build_folder/Server-EXP.c"
 cp README.md "$build_folder/README.md"
 cp README.md "$build_folder/README.md"
 
