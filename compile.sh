@@ -13,7 +13,7 @@ mkdir -p "$build_folder"
 # Compile server.c and client.c into the build folder
 gcc server.c -o "$build_folder/PRS-Server"
 
-# Copy server.c and client.c into the build folder
+# Copy files into the build folder
 cp server.c "$build_folder/server.c"
 
 # Create a Version.ini file with the current date and time
