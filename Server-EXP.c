@@ -48,6 +48,11 @@ int main() {
     // Parse the configuration file
     struct ServerConfig config = parseConfigFile(CONFIG_FILE);
 
+    // Print the parsed configuration
+    printf("Parsed Configuration:\n");
+    printf("Port: %d\n", config.port);
+    printf("Debug Mode: %s\n", config.debugMode ? "true" : "false");
+
     // Start the HTTP server
     struct MHD_Daemon *daemon = MHD_start_daemon(MHD_USE_AUTO | MHD_USE_INTERNAL_POLLING_THREAD,
                                                  config.port, NULL, NULL,
