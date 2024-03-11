@@ -10,7 +10,7 @@ current_datetime=$(date +'%Y-%m-%d_%H-%M-%S')
 build_folder="Builds/$current_datetime"
 mkdir -p "$build_folder"
 
-# Compile server.c and client.c into the build folder
+# Compile c scripts into the build folder
 gcc server.c -o "$build_folder/PRS-Server"
 
 # Copy files into the build folder
