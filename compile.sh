@@ -11,10 +11,10 @@ build_folder="Builds/$current_datetime"
 mkdir -p "$build_folder"
 
 # Compile c scripts into the build folder
-gcc Server-EXP.c -o "$build_folder/webserver" -lmicrohttpd
+gcc Server-EXP.c -o "$build_folder/webserver" 
 
 # Copy files into the build folder
-cp server.c "$build_folder/Server-EXP.c"
+cp server.c "$build_folder/server.c"
 
 # Create a Version.ini file with the current date and time
 echo "$current_datetime" > "$build_folder/Version.ini"
