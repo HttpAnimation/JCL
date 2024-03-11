@@ -18,6 +18,7 @@ cp Server-EXP.c "$build_folder/Server-EXP.c"
 cp README.md "$build_folder/README.md"
 cp LICENSE "$build_folder/LICENSE"
 cp Server-EXP.jcl "$build_folder/Server-EXP.jcl"
+cp goup.sh "$build_folder/goup.sh"
 
 # Create a Version.ini file with the current date and time
 echo "$current_datetime" > "$build_folder/Version.ini"
