@@ -45,7 +45,7 @@ Getting started with JCL couldn't be easier:
 
 JCL is perfect for automating tasks thanks to its simplicity and readability.
 
-- **Creating JCL**: Easily generate JCL files to represent configuration settings, data structures, or any other kind of information.
+- **Creating JCL**: Easily generate JCL files to represent configuration settings, data structures, or any other kind of information. Save these files with a `.jcl` extension.
 
 - **Parsing JCL**: Extract data from JCL files effortlessly in your automation scripts or applications.
 
@@ -83,4 +83,4 @@ Let's look at a couple of examples to see how easy it is to use JCL:
 
 ### Conclusion
 
-JCL is all about making automation simple and accessible. Whether you're configuring settings, managing user profiles, or automating data workflows, JCL's straightforward syntax and ease of use will make your life easier. Give it a try and experience the convenience of JCL for yourself!
+JCL is all about making automation simple and accessible. Whether you're configuring settings, managing user profiles, or automating data workflows, JCL's straightforward syntax and ease of use will make your life easier. Give it a try and experience the convenience of JCL for yourself! Save your JCL files with a `.jcl` extension for easy identification and use.
