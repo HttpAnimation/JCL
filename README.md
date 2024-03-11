@@ -6,3 +6,5 @@ To instal open a terminal and run the following command listed below.
 ```bash
 
 ```
+
+## Credits
