@@ -8,3 +8,4 @@ To instal open a terminal and run the following command listed below.
 ```
 
 ## Credits
+[PRS](https://github.com/HttpAnimation/PRS) | For the compile script
