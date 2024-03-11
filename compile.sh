@@ -31,3 +31,4 @@ echo "This is auto message and might work or might not."
 
 # Print the path to the build folder
 echo "Builds created at: $build_folder"
+cd $build_folder
