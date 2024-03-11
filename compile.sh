@@ -17,7 +17,7 @@ gcc Server-EXP.c -o "$build_folder/webserver" -lmicrohttpd
 cp Server-EXP.c "$build_folder/Server-EXP.c"
 cp README.md "$build_folder/README.md"
 cp LICENSE "$build_folder/LICENSE"
-cp SERVER-EXP.jcl "$build_folder/SERVER-EXP.jcl"
+cp Server-EXP.jcl "$build_folder/Server-EXP.jcl"
 
 # Create a Version.ini file with the current date and time
 echo "$current_datetime" > "$build_folder/Version.ini"
