@@ -15,6 +15,7 @@ gcc Server-EXP.c -o "$build_folder/webserver" -lmicrohttpd
 
 # Copy files into the build folder
 cp server.c "$build_folder/server.c"
+cp README.md "$build_folder/README.md"
 
 # Create a Version.ini file with the current date and time
 echo "$current_datetime" > "$build_folder/Version.ini"
