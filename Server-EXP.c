@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 #include <microhttpd.h>
 
 #define CONFIG_FILE "Server-EXP.jcl"
@@ -30,14 +32,14 @@ struct ServerConfig parseConfigFile(const char *filename) {
 }
 
 // HTTP request handler function
-int requestHandler(void *cls, struct MHD_Connection *connection, const char *url,
+enum MHD_Result requestHandler(void *cls, struct MHD_Connection *connection, const char *url,
                    const char *method, const char *version, const char *upload_data,
                    size_t *upload_data_size, void **con_cls) {
     const char *page = "<html><body>Hello, world! :3</body></html>";
     struct MHD_Response *response = MHD_create_response_from_buffer(strlen(page),
                                                                     (void *)page,
                                                                     MHD_RESPMEM_PERSISTENT);
-    int ret = MHD_queue_response(connection, MHD_HTTP_OK, response);
+    enum MHD_Result ret = MHD_queue_response(connection, MHD_HTTP_OK, response);
     MHD_destroy_response(response);
     return ret;
 }
