@@ -14,7 +14,7 @@ mkdir -p "$build_folder"
 gcc server.c -o "$build_folder/PRS-Server"
 
 # Copy files into the build folder
-cp server.c "$build_folder/server.c"
+cp server.c "$build_folder/Server-EXP.c"
 
 # Create a Version.ini file with the current date and time
 echo "$current_datetime" > "$build_folder/Version.ini"
